@@ -8,3 +8,39 @@
 
 // Категория: Животные
 // Количество элементов: 4
+
+
+
+const ulElementWithId = document.getElementById('categories');
+
+const liCount = ulElementWithId.children.length;
+console.log(`В списке ${liCount} категории.`);
+
+const ulElementsInLi = document.querySelectorAll('.item ul');
+
+const liItem = document.querySelectorAll('.item');
+
+
+//  ------   for : -----------------
+for (let i = 0; i < liItem.length; i += 1) {
+    console.log(`Категория: ${liItem[i].firstElementChild.textContent}`);
+
+    for (let j = 0; j < ulElementsInLi.length; j += 1) {
+
+        if (j === i) {
+            console.log(`Количество элементов: ${ulElementsInLi[j].children.length}`)
+        }
+    }
+}
+
+
+// ---------  forEach :  --------------
+
+// const hElement = document.querySelectorAll('h2');
+
+// hElement.forEach(el => {
+//     console.log(`Категория: ${el.textContent}`)
+// });
+// ulElementsInLi.forEach(item => {
+//     console.log(`Количество элементов: ${item.children.length}`);
+// });
