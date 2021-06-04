@@ -27,6 +27,7 @@ const hElement = document.querySelectorAll('h2');
 hElement.forEach(hElem => {
     console.log(`Категория: ${hElem.textContent}`);
 });
+
 ulElementsInLi.forEach(ulElem => {
     console.log(`Количество элементов: ${ulElem.children.length}`);
 });
