@@ -10,12 +10,11 @@ const ingredients = [
 ];
 
 const ulElemIngredients = document.getElementById('ingredients');
-// console.log(ulElem);
 
 const getLiIngrArray = ingredients.map((ingredient) => {
     const getLiElemForNewIngred = document.createElement('li');
     getLiElemForNewIngred.textContent = ingredient;
-    console.log(getLiElemForNewIngred)
+
     return getLiElemForNewIngred;
 })
 
