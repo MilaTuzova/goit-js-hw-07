@@ -20,27 +20,27 @@ const ulElementsInLi = document.querySelectorAll('.item ul');
 
 const liItem = document.querySelectorAll('.item');
 
-
-//  ------   for : -----------------
-for (let i = 0; i < liItem.length; i += 1) {
-    console.log(`Категория: ${liItem[i].firstElementChild.textContent}`);
-
-    for (let j = 0; j < ulElementsInLi.length; j += 1) {
-
-        if (j === i) {
-            console.log(`Количество элементов: ${ulElementsInLi[j].children.length}`)
-        }
-    }
-}
-
+const hElement = document.querySelectorAll('h2');
 
 // ---------  forEach :  --------------
 
-// const hElement = document.querySelectorAll('h2');
+hElement.forEach(hElem => {
+    console.log(`Категория: ${hElem.textContent}`);
+});
+ulElementsInLi.forEach(ulElem => {
+    console.log(`Количество элементов: ${ulElem.children.length}`);
+});
 
-// hElement.forEach(el => {
-//     console.log(`Категория: ${el.textContent}`)
-// });
-// ulElementsInLi.forEach(item => {
-//     console.log(`Количество элементов: ${item.children.length}`);
-// });
+
+//  ------   for : -----------------
+
+// for (let i = 0; i < liItem.length; i += 1) {
+//     console.log(`Категория: ${liItem[i].firstElementChild.textContent}`);
+
+//     for (let j = 0; j < ulElementsInLi.length; j += 1) {
+
+//         if (j === i) {
+//             console.log(`Количество элементов: ${ulElementsInLi[j].children.length}`)
+//         }
+//     }
+// }
