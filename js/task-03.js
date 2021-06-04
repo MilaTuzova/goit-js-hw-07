@@ -24,16 +24,12 @@ const images = [{
 ];
 
 const makeGallery = document.getElementById('gallery');
-console.log(makeGallery);
+// console.log(makeGallery);
 
 const items = [];
 
-for (let i = 0; i < images.length; i += 1) {
-    const src = images[i].url;
-    const alt = images[i].alt;
-    const item = `<li><img src='${src}' alt='${alt}'width='240' height='180'/></li>`;
-
-    items.push(item);
-};
+images.forEach((image) =>
+    items.push(`<li><img src='${image.url}' alt='${image.alt}'width='240' height='180'/></li>`)
+)
 
 makeGallery.insertAdjacentHTML('beforeend', items.join(''));
