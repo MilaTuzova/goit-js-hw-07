@@ -13,10 +13,10 @@ const ulElemIngredients = document.getElementById('ingredients');
 // console.log(ulElem);
 
 const getLiIngrArray = ingredients.map((ingredient) => {
-    const liElemOfIng = document.createElement('li');
-    liElemOfIng.textContent = ingredient;
-    console.log(liElemOfIng)
-    return liElemOfIng;
+    const getLiElemForNewIngred = document.createElement('li');
+    getLiElemForNewIngred.textContent = ingredient;
+    console.log(getLiElemForNewIngred)
+    return getLiElemForNewIngred;
 })
 
 ulElemIngredients.append(...getLiIngrArray);
