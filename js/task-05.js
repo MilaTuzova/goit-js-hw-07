@@ -3,13 +3,20 @@
 // <input type="text" placeholder="Ваше имя?" id="name-input" />
 // <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
 
+const mainParagr = document.querySelector('a').href = './task-05.html';
+
 const inputName = document.querySelector('input');
-console.log(inputName);
-console.log(inputName.textContent);
 
-inputName.addEventListener('click', () => {
-    console.log('click');
+const nameUserHi = document.getElementById('name-output');
 
-})
+const nameUserHiFunction = () => {
+    if (inputName.value === '') {
+        return nameUserHi.textContent = 'незнакомец';
+    }
+    return nameUserHi.textContent = inputName.value;
+}
 
-// const nameInputFunction = () => {}
+inputName.addEventListener('click', nameUserHiFunction);
+inputName.addEventListener('focus', nameUserHiFunction);
+inputName.addEventListener('keydown', nameUserHiFunction);
+inputName.addEventListener('submit', nameUserHiFunction);
