@@ -5,5 +5,11 @@
 
 const inputName = document.querySelector('input');
 console.log(inputName);
+console.log(inputName.textContent);
 
-inputName.addEventListener('cl')
+inputName.addEventListener('click', () => {
+    console.log('click');
+
+})
+
+// const nameInputFunction = () => {}
