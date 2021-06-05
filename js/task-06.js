@@ -28,8 +28,8 @@ const mainPag = document.querySelector('a').href = './task-06.html';
 const inputArea = document.getElementById('validation-input');
 const numberLength = inputArea.dataset.length;
 
-inputArea.addEventListener('blur', (e) => {
-    const valid = e.currentTarget.value;
+inputArea.addEventListener('blur', (event) => {
+    const valid = event.currentTarget.value;
 
     inputArea.classList.remove('valid', 'invalid');
 
