@@ -22,6 +22,13 @@ const spanValue = document.getElementById('value');
 
 let counterValue = 0;
 
-btnDec.addEventListener('click', () => spanValue.textContent = counterValue -= 1);
+const decrementFunction = () => spanValue.textContent = counterValue -= 1;
+const incrementFunction = () => spanValue.textContent = counterValue += 1;
 
-btnInc.addEventListener('click', () => spanValue.textContent = counterValue += 1);
+btnDec.addEventListener('click', decrementFunction);
+btnInc.addEventListener('click', incrementFunction);
+
+
+// -----------
+// btnDec.addEventListener('click', () => spanValue.textContent = counterValue -= 1);
+// btnInc.addEventListener('click', () => spanValue.textContent = counterValue += 1);
