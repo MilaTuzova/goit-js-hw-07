@@ -9,7 +9,7 @@
 //     <
 //     span id = "text" > Абракадабра! < /span>
 
-const mainPag = document.querySelector('a').href = './task-07.html';
+// const mainPag = document.querySelector('a').href = './task-07.html';
 
 
 
