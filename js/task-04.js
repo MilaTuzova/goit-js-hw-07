@@ -10,7 +10,7 @@
 //   <button type="button" data-action="increment">+1</button>
 // </div>
 
-// const mainPag = document.querySelector('a').href = './task-04.html';
+const mainPag = document.querySelector('a').href = './task-04.html';
 
 const btn = document.querySelectorAll('[data-action]');
 

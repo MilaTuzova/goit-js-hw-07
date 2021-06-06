@@ -23,7 +23,7 @@
 //   border-color: #f44336;
 // }
 
-// const mainPag = document.querySelector('a').href = './task-06.html';
+const mainPag = document.querySelector('a').href = './task-06.html';
 
 const inputArea = document.getElementById('validation-input');
 const numberLength = inputArea.dataset.length;

@@ -8,7 +8,7 @@
 
 // Категория: Животные
 // Количество элементов: 4
-
+const mainPag = document.querySelector('a').href = './task-01.html';
 
 
 const ulElementWithId = document.getElementById('categories');
