@@ -30,7 +30,7 @@ const makeGallery = document.getElementById('gallery');
 const items = [];
 
 images.forEach((image) =>
-    items.push(`<li><img src='${image.url}' alt='${image.alt}'width='240' height='180'/></li>`)
+    items.push(`<li><img src='${image.url}' alt='${image.alt}'width='240' height='150'/></li>`)
 )
 
 makeGallery.insertAdjacentHTML('beforeend', items.join(''));

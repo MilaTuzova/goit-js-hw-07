@@ -33,7 +33,7 @@ inputArea.addEventListener('blur', (event) => {
 
     inputArea.classList.remove('valid', 'invalid');
 
-    if (valid.length == numberLength) {
+    if (valid.length === Number(numberLength)) {
         return inputArea.classList.add('valid');
     }
     return inputArea.classList.add('invalid');

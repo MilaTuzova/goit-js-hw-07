@@ -11,12 +11,9 @@ const nameUserHi = document.getElementById('name-output');
 
 const nameUserHiFunction = () => {
     if (inputName.value === '') {
-        return nameUserHi.textContent = 'незнакомец';
+        nameUserHi.textContent = 'незнакомец';
     }
-    return nameUserHi.textContent = inputName.value;
+    nameUserHi.textContent = inputName.value;
 }
 
-inputName.addEventListener('click', nameUserHiFunction);
-inputName.addEventListener('focus', nameUserHiFunction);
-inputName.addEventListener('keydown', nameUserHiFunction);
-inputName.addEventListener('submit', nameUserHiFunction);
+inputName.addEventListener('input', nameUserHiFunction);

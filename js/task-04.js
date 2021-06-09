@@ -12,12 +12,13 @@
 
 const mainPag = document.querySelector('a').href = './task-04.html';
 
-const btn = document.querySelectorAll('[data-action]');
+// const btn = document.querySelectorAll('[data-action]');
 
-btn[0].classList.add('button-decrement');
-btn[1].classList.add('button-increment');
-const btnDec = document.querySelector('.button-decrement');
-const btnInc = document.querySelector('.button-increment');
+const btnDec = document.querySelector('[data-action="decrement"]');
+const btnInc = document.querySelector('[data-action="increment"]');
+
+// console.log(btnDec);
+// console.log(btnInc)
 
 const spanValue = document.getElementById('value');
 
