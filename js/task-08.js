@@ -25,6 +25,7 @@
 
 // <
 // div id = "boxes" > < /div>
+const mainPag = document.querySelector('a').href = './task-01.html';
 
 const INITIAL_ITEM_SIZE = 30;
 
